@@ -9,7 +9,8 @@ describe('notes routes', () => {
       .post('/notes')
       .send({
         title: 'My Cool Title',
-        body: 'My Cool Body'
+        body: 'My Cool Body',
+        comment: 'My Cool Comment'
       })
       .then(res => {
         expect(res.body).toEqual({
