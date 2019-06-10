@@ -6,7 +6,7 @@ const app = require('../../lib/app');
 describe('notes routes', () => {
   it('creates a note', () => {
     return request(app)
-      .post('/notes')
+      .post('/api/v1/notes')
       .send({
         title: 'My Cool Title',
         body: 'My Cool Body',
